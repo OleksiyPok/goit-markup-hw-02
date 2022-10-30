@@ -1,0 +1,63 @@
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --accent-color: #2196f3;
+  --focus-color: blue;
+  --active-color: red;
+}
+
+.list-res {
+  list-style: none;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+}
+
+.logo {
+  color: var(--secondary-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--focus-color);
+}
+
+.site-nav .link {
+  color: var(--secondary-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--focus-color);
+}
+
+.hero-title {
+  color: var(--secondary-color);
+}
+
+.section .title {
+  color: var(--secondary-color);
+}
+
+.button {
+  color: var(--secondary-color);
+  background-color: var(--primary-bg-color);
+}
+
+.button.primary {
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.button.secondary {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}

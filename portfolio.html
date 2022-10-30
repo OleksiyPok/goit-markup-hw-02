@@ -5,54 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <a href=""><span>Web</span>Studio </a>
-        <ul>
-          <li><a href="./">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+      <nav class="site-nav">
+        <a href="./index.html" class="logo"><span>Web</span>Studio </a>
+        <ul class="site-nav list-res">
+          <li><a href="./" class="link">Студія</a></li>
+          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="auth-nav list-res">
         <li>info@devstudio.com</li>
         <li>+38 096 111 11 11</li>
       </ul>
     </header>
     <main>
-      <h1>Портфоліо</h1>
+      <h1 class="title">Портфоліо</h1>
       <!-- Section Фільтри -->
-      <section>
-        <h2>Фільтри</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Фільтри</h2>
+        <ul class="site-nav list-res">
           <li>
-            <button type="button">Усі</button>
+            <button type="button" class="button primary">Усі</button>
           </li>
           <li>
-            <button type="button">Веб-сайти</button>
+            <button type="button" class="button secondary">Веб-сайти</button>
           </li>
           <li>
-            <button type="button">Додатки</button>
+            <button type="button" class="button primary">Додатки</button>
           </li>
           <li>
-            <button type="button">Дизайн</button>
+            <button type="button" class="button primary">Дизайн</button>
           </li>
           <li>
-            <button type="button">Маркетинг</button>
+            <button type="button" class="button primary">Маркетинг</button>
           </li>
         </ul>
       </section>
       <!-- Section Приклади робот -->
-      <section>
-        <h2>Приклади робот</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Приклади робот</h2>
+        <ul class="list-res">
           <li>
             <a href="">
               <img src="./images/technokryak.jpg" alt="Технокряк" width="370" />
-              <h3>Технокряк</h3>
+              <h3 class="title">Технокряк</h3>
               <p>Веб-сайт</p>
             </a>
           </li>
@@ -63,7 +64,7 @@
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
               />
-              <h3>Постер New Orlean vs Golden Star</h3>
+              <h3 class="title">Постер New Orlean vs Golden Star</h3>
               <p>Дизайн</p>
             </a>
           </li>
@@ -74,21 +75,21 @@
                 alt="Ресторан Seafood"
                 width="370"
               />
-              <h3>Ресторан Seafood</h3>
+              <h3 class="title">Ресторан Seafood</h3>
               <p>Додаток</p>
             </a>
           </li>
           <li>
             <a href="">
               <img src="./images/prime.jpg" alt="Проєкт Prime" width="370" />
-              <h3>Проєкт Prime</h3>
+              <h3 class="title">Проєкт Prime</h3>
               <p>Маркетинг</p>
             </a>
           </li>
           <li>
             <a href="">
               <img src="./images/boxes.jpg" alt="Проєкт Boxes" width="370" />
-              <h3>Проєкт Boxes</h3>
+              <h3 class="title">Проєкт Boxes</h3>
               <p>Додаток</p>
             </a>
           </li>
@@ -99,7 +100,7 @@
                 alt="Inspiration has no Borders"
                 width="370"
               />
-              <h3>Inspiration has no Borders</h3>
+              <h3 class="title">Inspiration has no Borders</h3>
               <p>Веб-сайт</p>
             </a>
           </li>
@@ -110,14 +111,14 @@
                 alt="Видання Limited Edition"
                 width="370"
               />
-              <h3>Видання Limited Edition</h3>
+              <h3 class="title">Видання Limited Edition</h3>
               <p>Дизайн</p>
             </a>
           </li>
           <li>
             <a href="">
               <img src="./images/lab.jpg" alt="Проєкт LAB" width="370" />
-              <h3>Проєкт LAB</h3>
+              <h3 class="title">Проєкт LAB</h3>
               <p>Маркетинг</p>
             </a>
           </li>
@@ -128,13 +129,14 @@
                 alt="Growing Business"
                 width="370"
               />
-              <h3>Growing Business</h3>
+              <h3 class="title">Growing Business</h3>
               <p>Додаток</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <a href=""><span>Web</span>Studio </a>
       <address>
