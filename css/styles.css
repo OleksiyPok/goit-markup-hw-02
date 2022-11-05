@@ -1,24 +1,41 @@
 :root {
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
+  --accent-bg-color: #2196f3;
+  --focus-bg-color: blue;
+  --active-bg-color: #2196f3;
   --primary-color: #757575;
   --secondary-color: #212121;
   --accent-color: #2196f3;
   --focus-color: blue;
-  --active-color: red;
+  --active-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.link-res {
+  text-decoration: none;
 }
 
 .list-res {
   list-style: none;
 }
 
-body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-color);
-}
-
 .logo {
   color: var(--secondary-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo:hover,
@@ -28,6 +45,10 @@ body {
 
 .site-nav .link {
   color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link.current {
@@ -39,17 +60,61 @@ body {
   color: var(--focus-color);
 }
 
-.hero-title {
+.hero .title {
   color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section .title {
   color: var(--secondary-color);
 }
 
+.section h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+.section.team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .button {
   color: var(--secondary-color);
   background-color: var(--primary-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .button.primary {
@@ -58,6 +123,6 @@ body {
 }
 
 .button.secondary {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
+  color: var(--active-color);
+  background-color: var(--active-bg-color);
 }
