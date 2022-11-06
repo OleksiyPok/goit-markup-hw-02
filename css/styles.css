@@ -102,7 +102,8 @@ body {
 }
 
 .section-title,
-.section-subtitle {
+.section-subtitle,
+.section-text {
   color: var(--secondary-color);
 }
 
