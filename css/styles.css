@@ -1,13 +1,11 @@
 :root {
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --accent-bg-color: #2196f3;
-  --focus-bg-color: blue;
+  --focus-bg-color: #2196f3;
   --active-bg-color: #2196f3;
   --primary-color: #757575;
   --secondary-color: #212121;
-  --accent-color: #2196f3;
-  --focus-color: blue;
+  --focus-color: #2196f3;
   --active-color: #ffffff;
 }
 
@@ -52,11 +50,43 @@ body {
 }
 
 .site-nav .link.current {
-  color: var(--accent-color);
+  color: var(--focus-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--focus-color);
+}
+
+.contact-list-header .link-mail,
+.contact-list-header .link-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.adress-text,
+.contact-list-footer .link-mail,
+.contact-list-footer .link-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /* color: var(--active-color); */
+  color: var(--primary-color);
+}
+
+.contact-list-header .link-mail:hover,
+.contact-list-header .link-tel:hover,
+.contact-list-footer .link-mail:hover,
+.contact-list-footer .link-tel:hover,
+.contact-list-header .link-mail:focus,
+.contact-list-header .link-tel:focus,
+.contact-list-footer .link-mail:focus,
+.contact-list-footer .link-tel:focus {
   color: var(--focus-color);
 }
 
@@ -71,40 +101,84 @@ body {
   text-transform: uppercase;
 }
 
-.section .title {
+.section-title,
+.section-subtitle {
   color: var(--secondary-color);
 }
 
-.section h2 {
+/* h2 */
+.section-title {
+}
+
+/* h3 */
+.section-subtitle {
+}
+
+/* p */
+.section-text {
+}
+
+/* h2 */
+.section.features .section-title,
+.section.about .section-title,
+.section.team .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.section h3 {
+/* h3 */
+.section.features .section-subtitle,
+.section.about .section-subtitle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.section.team h3 {
+/* h3 */
+.section.team .section-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: none;
 }
 
-.section.team p {
+/* p */
+.section.feature .section-text,
+.section.about .section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* p */
+.section.team .section-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* h3 */
+.section.examples .section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* p */
+.section.examples .section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
