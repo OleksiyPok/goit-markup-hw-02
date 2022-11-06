@@ -108,18 +108,6 @@ body {
 }
 
 /* h2 */
-.section-title {
-}
-
-/* h3 */
-.section-subtitle {
-}
-
-/* p */
-.section-text {
-}
-
-/* h2 */
 .section.features .section-title,
 .section.about .section-title,
 .section.team .section-title {
@@ -152,7 +140,6 @@ body {
 /* p */
 .section.feature .section-text,
 .section.about .section-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -160,7 +147,6 @@ body {
 
 /* p */
 .section.team .section-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -177,7 +163,6 @@ body {
 
 /* p */
 .section.examples .section-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
