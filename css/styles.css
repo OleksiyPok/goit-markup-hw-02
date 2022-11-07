@@ -3,10 +3,12 @@
   --secondary-bg-color: #f5f4fa;
   --focus-bg-color: #2196f3;
   --active-bg-color: #2196f3;
+  --button-focus-bg-color: #2196f3;
   --primary-color: #757575;
   --secondary-color: #212121;
   --focus-color: #2196f3;
-  --active-color: #ffffff;
+  --active-color: #2196f3;
+  --button-focus-color: #ffffff;
 }
 
 body {
@@ -50,7 +52,7 @@ body {
 }
 
 .site-nav .link.current {
-  color: var(--focus-color);
+  color: var(--active-color);
 }
 
 .site-nav .link:hover,
@@ -75,7 +77,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: var(--active-color); */
+  /* color: var(--focus-color); */
   color: var(--primary-color); /* Temporarily to make text visible without a background*/
 }
 
@@ -170,19 +172,15 @@ body {
 
 .button {
   color: var(--secondary-color);
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 }
 
-.button.primary {
-  color: var(--secondary-color);
-  background-color: var(--secondary-bg-color);
-}
-
-.button.secondary {
-  color: var(--active-color);
-  background-color: var(--active-bg-color);
+.button:hover,
+.button:focus {
+  color: var(--button-focus-color);
+  background-color: var(--button-focus-bg-color);
 }
