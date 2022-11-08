@@ -29,18 +29,17 @@ body {
   list-style: none;
 }
 
+.display-none {
+  display: none;
+}
+
 .logo {
-  color: var(--secondary-color);
+  color: var(--focus-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--focus-color);
 }
 
 .site-nav .link {
