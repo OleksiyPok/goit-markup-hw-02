@@ -1,15 +1,48 @@
 :root {
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #f5f4fa;
+  /* 
   --focus-bg-color: #2196f3;
   --active-bg-color: #2196f3;
   --button-focus-bg-color: #2196f3;
+  --footer-bg-color: #2f303a;
   --primary-color: #757575;
   --secondary-color: #212121;
   --focus-color: #2196f3;
   --active-color: #2196f3;
-  --button-focus-color: #ffffff;
-  --footer-background: #2f303a;
+  --button-focus-color: #ffffff; */
+
+  /*
+-bg- 
+#FFFFFF
+#F5F4FA
+#2F303A
+
+-button-bg-
+#F5F4FA
+#2196F3
+
+-button-text-
+#FFFFFF
+#212121
+
+-text-
+#212121
+#757575
+#2196F3
+*/
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --tertiary-bg-color: #2f303a;
+
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --tertiary-color: #2196f3;
+  --quaternary-color: #ffffff;
+
+  --primary-button-bg-color: #f5f4fa;
+  --secondary-button-bg-color: #2196f3;
+
+  --primary-button-txt-color: #212121;
+  --secondary-button-txt-color: #ffffff;
 }
 
 body {
@@ -35,12 +68,16 @@ body {
 }
 
 .logo {
-  color: var(--focus-color);
+  color: var(--tertiary-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.logo-color {
+  color: var(--secondary-color);
 }
 
 .site-nav .link {
@@ -52,16 +89,16 @@ body {
 }
 
 .site-nav .link.current {
-  color: var(--active-color);
+  color: var(--tertiary-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--focus-color);
+  color: var(--tertiary-color);
 }
 
-.contact-list-header .link-mail,
-.contact-list-header .link-tel {
+.header-contact-list .link-mail,
+.header-contact-list .link-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,31 +106,23 @@ body {
   color: var(--primary-color);
 }
 
-.adress-text,
-.contact-list-footer .link-mail,
-.contact-list-footer .link-tel {
+.footer-adress-text,
+.footer-contact-list .link-mail,
+.footer-contact-list .link-tel {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: var(--focus-color); */
-  color: var(--primary-color); /* Temporarily to make text visible without a background*/
+  color: var(--primary-color);
 }
 
-.contact-list-header .link-mail:hover,
-.contact-list-header .link-tel:hover,
-.contact-list-footer .link-mail:hover,
-.contact-list-footer .link-tel:hover,
-.contact-list-header .link-mail:focus,
-.contact-list-header .link-tel:focus,
-.contact-list-footer .link-mail:focus,
-.contact-list-footer .link-tel:focus {
-  color: var(--focus-color);
+.header-contact-list .link-mail:hover,
+.header-contact-list .link-mail:focus {
+  color: var(--tertiary-color);
 }
 
 .hero .title {
-  color: var(--secondary-color);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -101,6 +130,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--quaternary-color);
 }
 
 .section-title,
@@ -170,17 +200,38 @@ body {
   letter-spacing: 0.03em;
 }
 
-.button {
-  color: var(--secondary-color);
-  background-color: var(--secondary-bg-color);
+.section.hero .button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--secondary-button-txt-color);
+  background-color: var(--secondary-button-bg-color);
 }
 
-.button:hover,
-.button:focus {
-  color: var(--button-focus-color);
-  background-color: var(--button-focus-bg-color);
+.section.portfolio .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-button-txt-color);
+  background-color: var(--primary-button-bg-color);
+}
+
+.section.portfolio .button:hover,
+.section.portfolio .button:focus {
+  color: var(--secondary-button-txt-color);
+  background-color: var(--secondary-button-bg-color);
+}
+
+.section.hero {
+  background-color: #2f303a;
+}
+
+.section.team {
+  background-color: var(--secondary-bg-color);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
 }
