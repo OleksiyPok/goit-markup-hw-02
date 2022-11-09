@@ -18,12 +18,13 @@
 }
 
 body {
+  font-family: Roboto, sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--primary-color);
 }
 
 * {
-  font-family: Roboto, sans-serif;
+  /* font-family: Roboto, sans-serif; */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -108,7 +109,13 @@ body {
 }
 
 .header-contact .link-mail:hover,
-.header-contact .link-mail:focus {
+.header-contact .link-mail:focus,
+.header-contact .link-tel:hover,
+.header-contact .link-tel:focus,
+.footer-contact .link-mail:hover,
+.footer-contact .link-mail:focus,
+.footer-contact .link-tel:hover,
+.footer-contact .link-tel:focus {
   color: var(--tertiary-color);
 }
 
