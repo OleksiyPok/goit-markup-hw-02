@@ -112,6 +112,10 @@ body {
   color: var(--tertiary-color);
 }
 
+.footer {
+  background-color: var(--tertiary-bg-color);
+}
+
 .section.hero {
   background-color: #2f303a;
 }
@@ -168,14 +172,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* p */
-.section.team .section-text {
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 /* h3 */
 .section.examples .section-subtitle {
   font-weight: 700;
@@ -206,6 +202,18 @@ body {
   cursor: pointer; /* у макеті нема*/
 }
 
+/* p */
+.section.team .section-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section.team {
+  background-color: var(--secondary-bg-color);
+}
+
 .section.portfolio .button {
   font-family: inherit;
   font-weight: 500;
@@ -220,12 +228,4 @@ body {
   color: var(--secondary-button-txt-color);
   background-color: var(--secondary-button-bg-color);
   cursor: pointer;
-}
-
-.section.team {
-  background-color: var(--secondary-bg-color);
-}
-
-.footer {
-  background-color: var(--tertiary-bg-color);
 }
