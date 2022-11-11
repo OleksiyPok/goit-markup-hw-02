@@ -7,7 +7,7 @@
   --secondary-color: #212121;
   --tertiary-color: #2196f3;
   --quaternary-color: #ffffff;
-  --quaternary-color-opacity: #rgba(255, 255, 255, 0.6);
+  --quaternary-color-opacity: rgba(255, 255, 255, 0.6);
 
   --primary-button-bg-color: #f5f4fa;
   --secondary-button-bg-color: #2196f3;
@@ -19,15 +19,11 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   background-color: var(--primary-bg-color);
   color: var(--primary-color);
-}
-
-* {
-  /* font-family: Roboto, sans-serif; */
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 .link-res {
@@ -42,64 +38,52 @@ body {
   display: none;
 }
 
-.logo-span-1,
-.logo-span-2 {
+.logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.header .logo-span-1 {
   color: var(--tertiary-color);
 }
 
-.header .logo-span-2 {
+.header .logo-span {
   color: var(--secondary-color);
 }
 
-.footer .logo-span-1 {
-  color: var(--tertiary-color);
-}
-
-.footer .logo-span-2 {
+.footer .logo-span {
   color: var(--quaternary-color);
 }
 
-.site-nav .link {
-  color: var(--secondary-color);
+.header {
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link-site {
+  color: var(--secondary-color);
+}
+
+.site-nav .link-site:hover,
+.site-nav .link-site:focus {
   color: var(--tertiary-color);
 }
 
-.site-nav .link.current {
+.site-nav .link-site.current {
   color: var(--tertiary-color);
 }
 
 .header-contact .link-mail,
 .header-contact .link-tel {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--primary-color);
 }
 
-.footer-adress,
-.footer-contact .link-mail,
-.footer-contact .link-tel {
+.address {
   font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
-.footer-adress {
+.footer-location {
   color: var(--quaternary-color);
 }
 
@@ -138,60 +122,30 @@ body {
 }
 
 .section-title,
-.section-subtitle,
-.section-text {
+.section-subtitle {
   color: var(--secondary-color);
 }
 
-/* h2 */
 .section.features .section-title,
 .section.about .section-title,
 .section.team .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-/* h3 */
-.section.features .section-subtitle,
-.section.about .section-subtitle {
-  font-weight: 700;
+.section.features .section-subtitle {
+  font-size: inherit;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-/* h3 */
 .section.team .section-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
-}
-
-/* p */
-.section.feature .section-text,
-.section.about .section-text {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-/* h3 */
-.section.examples .section-subtitle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-/* p */
-.section.examples .section-text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .section.hero .button {
@@ -201,24 +155,22 @@ body {
   line-height: 1.6;
   color: var(--secondary-button-txt-color);
   background-color: var(--secondary-button-bg-color);
+  cursor: pointer;
 }
 
 .section.hero .button:hover,
 .section.hero .button:focus {
   background-color: var(--tertiary-button-bg-color);
-  cursor: pointer; /* у макеті нема*/
-}
-
-/* p */
-.section.team .section-text {
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .section.team {
   background-color: var(--secondary-bg-color);
+}
+
+.section.team .section-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .section.portfolio .button {
@@ -228,11 +180,17 @@ body {
   line-height: 1.6;
   color: var(--primary-button-txt-color);
   background-color: var(--primary-button-bg-color);
+  cursor: pointer;
 }
 
 .section.portfolio .button:hover,
 .section.portfolio .button:focus {
   color: var(--secondary-button-txt-color);
   background-color: var(--secondary-button-bg-color);
-  cursor: pointer;
+}
+
+.section.portfolio .section-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-color);
 }
